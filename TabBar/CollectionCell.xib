@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionCell" customModule="TabBar" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CELL" id="MuA-EA-Rct" customClass="CollectionCell" customModule="TabBar" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKp-uq-GU0">
+                        <rect key="frame" x="20" y="19" width="119" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="119" id="4kj-v0-3df"/>
+                            <constraint firstAttribute="height" constant="21" id="kzd-GV-m5X"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kKp-uq-GU0" firstAttribute="top" secondItem="QoN-Ki-ix4" secondAttribute="top" constant="19" id="SVM-vx-IXw"/>
+                <constraint firstItem="QoN-Ki-ix4" firstAttribute="trailing" secondItem="kKp-uq-GU0" secondAttribute="trailing" constant="35" id="XUX-FW-XTw"/>
+                <constraint firstItem="QoN-Ki-ix4" firstAttribute="bottom" secondItem="kKp-uq-GU0" secondAttribute="bottom" constant="20" id="i19-Ku-DfM"/>
+                <constraint firstItem="kKp-uq-GU0" firstAttribute="leading" secondItem="QoN-Ki-ix4" secondAttribute="leading" constant="20" id="kzl-Mx-bOa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QoN-Ki-ix4"/>
+            <size key="customSize" width="174" height="60"/>
+            <connections>
+                <outlet property="LabelName" destination="kKp-uq-GU0" id="QEX-4Y-hlS"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="45"/>
+        </collectionViewCell>
+    </objects>
+</document>
